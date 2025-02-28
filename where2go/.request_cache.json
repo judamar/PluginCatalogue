@@ -1,0 +1,223 @@
+{
+  "NOTICE": "Not public API, DO NOT use this file",
+  "release_pages": {},
+  "asset_data": {
+    "195368525": {
+      "meta": {
+        "schema_version": 4,
+        "id": "where2go",
+        "name": "Where2go",
+        "version": "0.2.5",
+        "link": "https://github.com/LazyAlienServer/Where2go",
+        "authors": [
+          "tanh_Heng"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "An advanced 'location' plugin including sharing waypoints, search player pos, etc.",
+          "zh_cn": "一个功能强大的位置插件，包含共享坐标点、查询玩家位置等功能"
+        }
+      },
+      "size": 23729,
+      "hash_md5": "cf8728a3c9b055a478f434867e31e667",
+      "hash_sha256": "95c5a9dcfec9a6ebe1ad662f8fa3b5abea147d97dcc510d10f04163e4afd641a",
+      "ttl": 55
+    },
+    "192747716": {
+      "meta": {
+        "schema_version": 4,
+        "id": "where2go",
+        "name": "Where2go",
+        "version": "0.2.4",
+        "link": "https://github.com/LazyAlienServer/Where2go",
+        "authors": [
+          "tanh_Heng"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "An advanced 'location' plugin including sharing waypoints, search player pos, etc.",
+          "zh_cn": "一个功能强大的位置插件，包含共享坐标点、查询玩家位置等功能"
+        }
+      },
+      "size": 23721,
+      "hash_md5": "605940b1d44a003430a1c00047a58d1c",
+      "hash_sha256": "c8b0977a48541717eb9549f958d71842441d23d7890aa21bf898d14639790ddf",
+      "ttl": 55
+    },
+    "189565215": {
+      "meta": {
+        "schema_version": 4,
+        "id": "where2go",
+        "name": "Where2go",
+        "version": "0.2.3",
+        "link": "https://github.com/LazyAlienServer/Where2go",
+        "authors": [
+          "tanh_Heng"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "An advanced 'location' plugin including sharing waypoints, search player pos, etc.",
+          "zh_cn": "一个功能强大的位置插件，包含共享坐标点、查询玩家位置等功能"
+        }
+      },
+      "size": 23719,
+      "hash_md5": "be4dca5c60efa72362631e8f1a932ad0",
+      "hash_sha256": "d862cf895ed1f4b94a08aa6a5f84dd89dd27d5ec7b087e60ce3108fc9a87ae45",
+      "ttl": 55
+    },
+    "183644392": {
+      "meta": {
+        "schema_version": 4,
+        "id": "where2go",
+        "name": "Where2go",
+        "version": "0.2.2",
+        "link": "https://github.com/LazyAlienServer/Where2go",
+        "authors": [
+          "tanh_Heng"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "An advanced 'location' plugin including sharing waypoints, search player pos, etc.",
+          "zh_cn": "一个功能强大的位置插件，包含共享坐标点、查询玩家位置等功能"
+        }
+      },
+      "size": 23725,
+      "hash_md5": "f9ed30c8214f56040c8962812735c518",
+      "hash_sha256": "0e64141782b7b8208fa94b1a0a08ea7b507ce965a2cc1e1277b44fad61c3854c",
+      "ttl": 55
+    },
+    "182694905": {
+      "meta": {
+        "schema_version": 4,
+        "id": "where2go",
+        "name": "Where2go",
+        "version": "0.2.1",
+        "link": "https://github.com/LazyAlienServer/Where2go",
+        "authors": [
+          "tanh_Heng"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "An advanced 'location' plugin including sharing waypoints, search player pos, etc.",
+          "zh_cn": "一个功能强大的位置插件，包含共享坐标点、查询玩家位置等功能"
+        }
+      },
+      "size": 23771,
+      "hash_md5": "f0a95657f1de61f2584986da1c58068a",
+      "hash_sha256": "b0c28598916fe7b0290af2fbeb7887713c9b2cef821fb8ccf20d99cfc0b9af9b",
+      "ttl": 55
+    },
+    "182329147": {
+      "meta": {
+        "schema_version": 4,
+        "id": "where2go",
+        "name": "Where2go",
+        "version": "0.2.0",
+        "link": "https://github.com/LazyAlienServer/Where2go",
+        "authors": [
+          "tanh_Heng"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "An advanced 'location' plugin including sharing waypoints, search player pos, etc.",
+          "zh_cn": "一个功能强大的位置插件，包含共享坐标点、查询玩家位置等功能"
+        }
+      },
+      "size": 23779,
+      "hash_md5": "026214eb9d70b49d07e0a64eebcef91f",
+      "hash_sha256": "69aeee2b75778359d34850529fe9531592d2c1cc8f0c5fd59ac58173f2b6899c",
+      "ttl": 55
+    },
+    "181514345": {
+      "meta": {
+        "schema_version": 4,
+        "id": "where2go",
+        "name": "Where2go",
+        "version": "0.1.2",
+        "link": "https://github.com/LazyAlienServer/Where2go",
+        "authors": [
+          "tanh_Heng"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "An advanced 'location' plugin including sharing waypoints, search player pos, etc.",
+          "zh_cn": "一个功能强大的位置插件，包含共享坐标点、查询玩家位置等功能"
+        }
+      },
+      "size": 22718,
+      "hash_md5": "956037c3dfaf3fe41eb93ae2a73fe2e9",
+      "hash_sha256": "1a29eb53e29c630ec7bfcc9ec31a80c2c066b51caa0e6bdb7f6fd263c6ff9049",
+      "ttl": 55
+    },
+    "181291878": {
+      "meta": {
+        "schema_version": 4,
+        "id": "where2go",
+        "name": "Where2go",
+        "version": "0.1.1",
+        "link": "https://github.com/LazyAlienServer/Where2go",
+        "authors": [
+          "tanh_Heng"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "An advanced 'location' plugin including sharing waypoints, search player pos, etc.",
+          "zh_cn": "一个功能强大的位置插件，包含共享坐标点、查询玩家位置等功能"
+        }
+      },
+      "size": 22721,
+      "hash_md5": "b5a9679938c28cfe900dfd02e1e8ab61",
+      "hash_sha256": "0216e4b50c00fc75a0d64af5a4014c1a2808b0d9c17f716e82a1ec450cb02646",
+      "ttl": 55
+    },
+    "181276905": {
+      "meta": {
+        "schema_version": 4,
+        "id": "to_where",
+        "name": "ToWhere",
+        "version": "0.1.0",
+        "link": "https://github.com/LazyAlienServer/ToWhere",
+        "authors": [
+          "tanh_Heng"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.1.2"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "An advanced 'location' plugin including sharing waypoints, search player pos, etc.",
+          "zh_cn": "一个先进的位置插件，包含共享坐标点、查询玩家位置等功能"
+        }
+      },
+      "size": 1157,
+      "hash_md5": "19d75d707c1e518047a8d910175b8900",
+      "hash_sha256": "1692eec544fe38c9c356c7d33af7f66db18c6d35dfd4f34211f673ebfc2eb83f",
+      "ttl": 55
+    }
+  },
+  "repos_info": null
+}

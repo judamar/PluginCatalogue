@@ -1,0 +1,103 @@
+{
+  "NOTICE": "Not public API, DO NOT use this file",
+  "release_pages": {},
+  "asset_data": {
+    "58910490": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_file_updater",
+        "name": "Region file Updater",
+        "version": "1.5.2",
+        "link": "https://github.com/TISUnion/RegionFileUpdater",
+        "authors": [
+          "Fallen_Breath"
+        ],
+        "dependencies": {
+          "minecraft_data_api": "*"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "A MCDR plugin to help you update region files in game",
+          "zh_cn": "一个从指定位置拉取region文件至本服存档的插件"
+        }
+      },
+      "size": 16049,
+      "hash_md5": "2dae4b0c22e27180661ce9e0a563fe79",
+      "hash_sha256": "5f84b9d0ac25a1f7e6b55382a6d8fb448be8f6df295e7d12d6424f3ec3fad1c7",
+      "ttl": 55
+    },
+    "48443647": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_file_updater",
+        "name": "Region file Updater",
+        "version": "1.5.1",
+        "link": "https://github.com/TISUnion/RegionFileUpdater",
+        "authors": [
+          "Fallen_Breath"
+        ],
+        "dependencies": {
+          "minecraft_data_api": "*"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "A MCDR plugin to help you update region files in game",
+          "zh_cn": "一个从指定位置拉取region文件至本服存档的插件"
+        }
+      },
+      "size": 15962,
+      "hash_md5": "dc161022c6c3ad61b4f38385fae9b2c2",
+      "hash_sha256": "11d93314a436a13c29983540da60ca71c21efd559ed2f3756e9ecab591916b40",
+      "ttl": 55
+    },
+    "45657180": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_file_updater",
+        "name": "Region file Updater",
+        "version": "1.5.0",
+        "link": "https://github.com/TISUnion/RegionFileUpdater",
+        "authors": [
+          "Fallen_Breath"
+        ],
+        "dependencies": {
+          "minecraft_data_api": "*"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "A MCDR plugin to help you update region files in game",
+          "zh_cn": "一个从指定位置拉取region文件至本服存档的插件"
+        }
+      },
+      "size": 15979,
+      "hash_md5": "f12240c3eb94d3b67dfcc9edfd63455f",
+      "hash_sha256": "af9a4058e8a7fd4be7ba6cc56938573678d951844e9752e77b31bcd0158041d6",
+      "ttl": 55
+    },
+    "42572967": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_file_updater",
+        "name": "Region file Updater",
+        "version": "1.4.1",
+        "link": "https://github.com/TISUnion/RegionFileUpdater",
+        "authors": [
+          "Fallen_Breath"
+        ],
+        "dependencies": {
+          "minecraft_data_api": "*"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "A MCDR plugin to help you update region files in game",
+          "zh_cn": "一个从指定位置拉取region文件至本服存档的插件"
+        }
+      },
+      "size": 15904,
+      "hash_md5": "7ec51ab3d0287dc41a8a867f4a703c0b",
+      "hash_sha256": "5c79c1c2afef257ef10d2607e9ba424cfe7bc0e9950d309ad75b621755b1258f",
+      "ttl": 55
+    }
+  },
+  "repos_info": null
+}

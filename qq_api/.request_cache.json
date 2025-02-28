@@ -1,0 +1,207 @@
+{
+  "NOTICE": "Not public API, DO NOT use this file",
+  "release_pages": {},
+  "asset_data": {
+    "189624807": {
+      "meta": {
+        "schema_version": 4,
+        "id": "qq_api",
+        "name": "QQAPI",
+        "version": "1.4.0",
+        "link": "https://github.com/AnzhiZhang/MCDReforgedPlugins/tree/master/src/qq_api",
+        "authors": [
+          "Andy Zhang"
+        ],
+        "dependencies": {},
+        "requirements": [
+          "aiocqhttp",
+          "uvicorn"
+        ],
+        "description": {
+          "en_us": "Connect Minecraft and QQ",
+          "zh_cn": "连接 MC 与 QQ"
+        }
+      },
+      "size": 2412,
+      "hash_md5": "5bc5300dd2ddafe89ce4834e1a6f34e3",
+      "hash_sha256": "9abb3cd72acea8dc54530e9e5c5c64bf7b732c88e29e3ceac3ce84d7cd04cd3a",
+      "ttl": 55
+    },
+    "117527117": {
+      "meta": {
+        "schema_version": 4,
+        "id": "qq_api",
+        "name": "QQAPI",
+        "version": "1.3.1",
+        "link": "https://github.com/AnzhiZhang/MCDReforgedPlugins/tree/master/qq_api",
+        "authors": [
+          "Andy Zhang"
+        ],
+        "dependencies": {},
+        "requirements": [
+          "aiocqhttp",
+          "uvicorn"
+        ],
+        "description": {
+          "en_us": "Connect Minecraft and QQ",
+          "zh_cn": "连接 MC 与 QQ"
+        }
+      },
+      "size": 2114,
+      "hash_md5": "0b930d1d1626bd34fd5a229b2e86d181",
+      "hash_sha256": "e4eae6280dc4439c3f3c7a4780ad602f9870bdebe60eaaabfefdfb132923a25c",
+      "ttl": 55
+    },
+    "114486383": {
+      "meta": {
+        "schema_version": 4,
+        "id": "qq_api",
+        "name": "QQAPI",
+        "version": "1.3.0",
+        "link": "https://github.com/AnzhiZhang/MCDReforgedPlugins/tree/master/qq_api",
+        "authors": [
+          "Andy Zhang"
+        ],
+        "dependencies": {},
+        "requirements": [
+          "aiocqhttp",
+          "uvicorn==0.20.0"
+        ],
+        "description": {
+          "en_us": "Connect Minecraft and QQ",
+          "zh_cn": "连接 MC 与 QQ"
+        }
+      },
+      "size": 2123,
+      "hash_md5": "61ccf04de8c9d2c900c87a6d6e6e0ee3",
+      "hash_sha256": "a4f86392bf4cc7f55cfd5d7e66eff206c7d18b25cd973f3ee6831e45580869e1",
+      "ttl": 55
+    },
+    "111883380": {
+      "meta": {
+        "schema_version": 4,
+        "id": "qq_api",
+        "name": "QQAPI",
+        "version": "1.2.1",
+        "link": "https://github.com/AnzhiZhang/MCDReforgedPlugins/tree/master/qq_api",
+        "authors": [
+          "Andy Zhang"
+        ],
+        "dependencies": {},
+        "requirements": [
+          "aiocqhttp",
+          "uvicorn==0.20.0"
+        ],
+        "description": {
+          "en_us": "Connect Minecraft and QQ",
+          "zh_cn": "连接 MC 与 QQ"
+        }
+      },
+      "size": 1813,
+      "hash_md5": "b75e97a6984059c4bb2642e4832cfffd",
+      "hash_sha256": "7f8e8f24cdf298e7c583afa81ae0764a93792a89068dc9267b85bcebef6c6c5e",
+      "ttl": 55
+    },
+    "97239931": {
+      "meta": {
+        "schema_version": 4,
+        "id": "qq_api",
+        "name": "QQAPI",
+        "version": "1.2.0",
+        "link": "https://github.com/AnzhiZhang/MCDReforgedPlugins/tree/master/qq_api",
+        "authors": [
+          "Andy Zhang"
+        ],
+        "dependencies": {},
+        "requirements": [
+          "aiocqhttp",
+          "uvicorn==0.20.0"
+        ],
+        "description": {
+          "en_us": "Connect Minecraft and QQ",
+          "zh_cn": "连接 MC 与 QQ"
+        }
+      },
+      "size": 1813,
+      "hash_md5": "94b1ae7f1c74e0411e27bb292e700067",
+      "hash_sha256": "8bcd2e91b8ea333f6075c553d6cb408165121c21a683deb42b0381bcddf4aad6",
+      "ttl": 55
+    },
+    "94230864": {
+      "meta": {
+        "schema_version": 4,
+        "id": "qq_api",
+        "name": "QQAPI",
+        "version": "1.1.1",
+        "link": "https://github.com/AnzhiZhang/MCDReforgedPlugins/tree/master/qq_api",
+        "authors": [
+          "Andy Zhang"
+        ],
+        "dependencies": {},
+        "requirements": [
+          "aiocqhttp",
+          "uvicorn"
+        ],
+        "description": {
+          "en_us": "Connect Minecraft and QQ",
+          "zh_cn": "连接 MC 与 QQ"
+        }
+      },
+      "size": 1617,
+      "hash_md5": "1c6ceb0972f3e0420c7d3d31cb86cda3",
+      "hash_sha256": "29be866907be6895cb0c0e852276db99363156cac762d916cd93bc33bed63f3c",
+      "ttl": 55
+    },
+    "94230545": {
+      "meta": {
+        "schema_version": 4,
+        "id": "qq_api",
+        "name": "QQAPI",
+        "version": "1.1.0",
+        "link": "https://github.com/AnzhiZhang/MCDReforgedPlugins/tree/master/qq_api",
+        "authors": [
+          "Andy Zhang"
+        ],
+        "dependencies": {},
+        "requirements": [
+          "aiocqhttp",
+          "uvicorn"
+        ],
+        "description": {
+          "en_us": "Connect Minecraft and QQ",
+          "zh_cn": "连接 MC 与 QQ"
+        }
+      },
+      "size": 1639,
+      "hash_md5": "190d8183c27001449b8f382ce723b06a",
+      "hash_sha256": "f73f561ab472e3c993514e1f48b03c5f5e9b01d955efe56310857810370b9eb3",
+      "ttl": 55
+    },
+    "94219494": {
+      "meta": {
+        "schema_version": 4,
+        "id": "qq_api",
+        "name": "QQAPI",
+        "version": "1.0.0",
+        "link": "https://github.com/AnzhiZhang/MCDReforgedPlugins/tree/master/qq_api",
+        "authors": [
+          "Andy Zhang"
+        ],
+        "dependencies": {},
+        "requirements": [
+          "aiocqhttp",
+          "uvicorn"
+        ],
+        "description": {
+          "en_us": "Connect Minecraft and QQ",
+          "zh_cn": "连接 MC 与 QQ"
+        }
+      },
+      "size": 1404,
+      "hash_md5": "e728dac486497eb359ea769b6e1b6648",
+      "hash_sha256": "ca5c67b1147e0facfe25f87d3c9667fd9238f3a3ab45a48ad297010e1b4e0164",
+      "ttl": 55
+    }
+  },
+  "repos_info": null
+}

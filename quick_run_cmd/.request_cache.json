@@ -1,0 +1,33 @@
+{
+  "NOTICE": "Not public API, DO NOT use this file",
+  "release_pages": {},
+  "asset_data": {
+    "52508879": {
+      "meta": {
+        "schema_version": 4,
+        "id": "quick_run_cmd",
+        "name": "quick_run_cmd",
+        "version": "2.0.0",
+        "link": "https://github.com/R1ckyH/quick_run_cmd",
+        "authors": [
+          "Ricky"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.0.0"
+        },
+        "requirements": [
+          "mcdreforged"
+        ],
+        "description": {
+          "en_us": "A plugin for run command quickly.",
+          "zh_cn": "一个快速运行自定义脚本的插件。"
+        }
+      },
+      "size": 9504,
+      "hash_md5": "33e94cb362e2fd2ac12e12cd3955e230",
+      "hash_sha256": "26abd64f2ba8858cc645253c20866544f98f363493e029a7505e7822c44d6c75",
+      "ttl": 55
+    }
+  },
+  "repos_info": null
+}

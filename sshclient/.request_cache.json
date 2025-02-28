@@ -1,0 +1,33 @@
+{
+  "NOTICE": "Not public API, DO NOT use this file",
+  "release_pages": {},
+  "asset_data": {
+    "193986379": {
+      "meta": {
+        "schema_version": 4,
+        "id": "sshclient",
+        "name": "SSHClient",
+        "version": "0.0.1",
+        "link": "https://github.com/Mooling0602/SSHClient-MCDR",
+        "authors": [
+          "Mooling0602"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.1.0"
+        },
+        "requirements": [
+          "paramiko"
+        ],
+        "description": {
+          "en_us": "A SSH client instance for MCDR.",
+          "zh_cn": "一个MCDR的SSH客户端实例"
+        }
+      },
+      "size": 2144,
+      "hash_md5": "8cbbe37c3d06675d14eaa564855ab1b0",
+      "hash_sha256": "8df91cc654be55360f755c4fdf1fa90923e752629370a829496526a4ad2a7f9a",
+      "ttl": 55
+    }
+  },
+  "repos_info": null
+}

@@ -1,0 +1,342 @@
+{
+  "NOTICE": "Not public API, DO NOT use this file",
+  "release_pages": {},
+  "asset_data": {
+    "230232994": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_backup",
+        "name": "Region BackUp",
+        "version": "1.9.2",
+        "link": "https://github.com/Passion-Never-Dissipate/Region_BackUp",
+        "authors": [
+          "FRUITS_CANDY",
+          "Bexerlmao",
+          "SeeU_SAMA"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.7.0"
+        },
+        "requirements": [
+          "mcdreforged>=2.7.0"
+        ],
+        "description": {
+          "en_us": "An MCDR plugin that backs up or backs up files on a regional basis",
+          "zh_cn": "一个以区域为单位备份或回档的MCDR插件"
+        }
+      },
+      "size": 25117,
+      "hash_md5": "b5e98a3e3372b5a33c953252d2859822",
+      "hash_sha256": "6861b3e170483322451613af6f869ad022d7ffaf7feebc697238a4ea40fd14d9",
+      "ttl": 55
+    },
+    "229911252": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_backup",
+        "name": "Region BackUp",
+        "version": "1.9.1",
+        "link": "https://github.com/Passion-Never-Dissipate/Region_BackUp",
+        "authors": [
+          "FRUITS_CANDY",
+          "Bexerlmao",
+          "SeeU_SAMA"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.7.0"
+        },
+        "requirements": [
+          "mcdreforged>=2.7.0"
+        ],
+        "description": {
+          "en_us": "An MCDR plugin that backs up or backs up files on a regional basis",
+          "zh_cn": "一个以区域为单位备份或回档的MCDR插件"
+        }
+      },
+      "size": 24961,
+      "hash_md5": "e6073f5319ea68cc3865783a7afef735",
+      "hash_sha256": "00e0e3ade125989f72ac7f5439bb5d08e8f4434052efe32d1d33f1665e641b20",
+      "ttl": 55
+    },
+    "229879980": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_backup",
+        "name": "Region BackUp",
+        "version": "1.9.0",
+        "link": "https://github.com/Passion-Never-Dissipate/Region_BackUp",
+        "authors": [
+          "FRUITS_CANDY",
+          "Bexerlmao",
+          "SeeU_SAMA"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.7.0"
+        },
+        "requirements": [
+          "mcdreforged>=2.7.0"
+        ],
+        "description": {
+          "en_us": "An MCDR plugin that backs up or backs up files on a regional basis",
+          "zh_cn": "一个以区域为单位备份或回档的MCDR插件"
+        }
+      },
+      "size": 24966,
+      "hash_md5": "9f1822e184083bfda7e7422d5ea5ef7d",
+      "hash_sha256": "c3e9bf209202ef0879b4946845a7711ef4c15eb2f9ba42b4bb7e4a1810e2434f",
+      "ttl": 55
+    },
+    "227145843": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_backup",
+        "name": "Region BackUp",
+        "version": "1.8.4",
+        "link": "https://github.com/Passion-Never-Dissipate/Region_BackUp",
+        "authors": [
+          "FRUITS_CANDY",
+          "Bexerlmao",
+          "SeeU_SAMA"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [
+          "mcdreforged>=2.6.0"
+        ],
+        "description": {
+          "en_us": "An MCDR plugin that backs up or backs up files on a regional basis",
+          "zh_cn": "一个以区域为单位备份或回档的MCDR插件"
+        }
+      },
+      "size": 23672,
+      "hash_md5": "98ce82b7603f26091f1bba7669207e6f",
+      "hash_sha256": "ab96b6ad86fcc4dafa5cc6cf2e73db6858c99a08e57d97ba386691f1f3c9ced1",
+      "ttl": 55
+    },
+    "227088413": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_backup",
+        "name": "Region BackUp",
+        "version": "1.8.3",
+        "link": "https://github.com/Passion-Never-Dissipate/Region_BackUp",
+        "authors": [
+          "FRUITS_CANDY",
+          "Bexerlmao",
+          "SeeU_SAMA"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [
+          "mcdreforged>=2.6.0"
+        ],
+        "description": {
+          "en_us": "An MCDR plugin that backs up or backs up files on a regional basis",
+          "zh_cn": "一个以区域为单位备份或回档的MCDR插件"
+        }
+      },
+      "size": 23749,
+      "hash_md5": "20eb67767ba5b5d5ba2e36239381f9b0",
+      "hash_sha256": "1578c2fa4673aa1a37e9a370940dc4ded0daf0378285ce55c39823b1f6911717",
+      "ttl": 55
+    },
+    "227091265": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_backup",
+        "name": "Region BackUp",
+        "version": "1.8.3",
+        "link": "https://github.com/Passion-Never-Dissipate/Region_BackUp",
+        "authors": [
+          "FRUITS_CANDY",
+          "Bexerlmao",
+          "SeeU_SAMA"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [
+          "mcdreforged>=2.6.0"
+        ],
+        "description": {
+          "en_us": "An MCDR plugin that backs up or backs up files on a regional basis",
+          "zh_cn": "一个以区域为单位备份或回档的MCDR插件"
+        }
+      },
+      "size": 23749,
+      "hash_md5": "20eb67767ba5b5d5ba2e36239381f9b0",
+      "hash_sha256": "1578c2fa4673aa1a37e9a370940dc4ded0daf0378285ce55c39823b1f6911717",
+      "ttl": 55
+    },
+    "158699566": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_backup",
+        "name": "Region BackUp",
+        "version": "1.7.0",
+        "link": "https://github.com/GHS-Official/Region-BackUp",
+        "authors": [
+          "FRUITS_CANDY",
+          "Bexerlmao",
+          "mc_doge_",
+          "SeeU_SAMA"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [
+          "mcdreforged>=2.6.0"
+        ],
+        "description": {
+          "en_us": "An MCDR plugin that backs up or backs up files on a regional basis",
+          "zh_cn": "一个以区域为单位备份或回档的MCDR插件"
+        }
+      },
+      "size": 23959,
+      "hash_md5": "8c69ee57e089c6c4dca4e23550bc7070",
+      "hash_sha256": "3c8170e71333b8be04af96d93efb07deb22bd41178738b9e7606b2a6bc2a8c93",
+      "ttl": 55
+    },
+    "158700030": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_backup",
+        "name": "Region-BackUp",
+        "version": "1.6.1",
+        "link": "https://github.com/GHS-Official/Region-BackUp",
+        "authors": [
+          "GHS-Official"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [
+          "mcdreforged>=2.6.0"
+        ],
+        "description": {
+          "en_us": "An MCDR plugin that backs up or backs up files on a regional basis",
+          "zh_cn": "一个以区域为单位备份或回档的MCDR插件"
+        }
+      },
+      "size": 21286,
+      "hash_md5": "60753bb6be9438627a93ce00e03a5743",
+      "hash_sha256": "0f5d3b7fdccb4d9d49388fd0f1123621a930f4c4afef5aea89d2fc3430986a53",
+      "ttl": 55
+    },
+    "158700134": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_backup",
+        "name": "Region BackUp",
+        "version": "1.6.0",
+        "link": "https://github.com/GHS-Official/Region-BackUp",
+        "authors": [
+          "GHS-Official",
+          "Bexerlmao",
+          "mc_doge_"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [
+          "mcdreforged>=2.6.0"
+        ],
+        "description": {
+          "en_us": "An MCDR plugin that backs up or backs up files on a regional basis",
+          "zh_cn": "一个以区域为单位备份或回档的MCDR插件"
+        }
+      },
+      "size": 21238,
+      "hash_md5": "9a176524a080e8c5f301cdf26a5be064",
+      "hash_sha256": "7296d07700d7eb5b3167f91380e5c26b7119ee8b2cb1f7edc7f34e7e66fece66",
+      "ttl": 55
+    },
+    "158700637": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_backup",
+        "name": "Region BackUp",
+        "version": "1.5.0",
+        "link": "https://github.com/GHS-Official/Region-BackUp",
+        "authors": [
+          "GHS-Official",
+          "Bexerlmao",
+          "mc_doge_"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [
+          "mcdreforged>=2.6.0"
+        ],
+        "description": {
+          "en_us": "An MCDR plugin that backs up or backs up files on a regional basis",
+          "zh_cn": "一个以区域为单位备份或回档的MCDR插件"
+        }
+      },
+      "size": 21064,
+      "hash_md5": "aa00e7467eaebc39645fd254f62c9e78",
+      "hash_sha256": "610f7ff047cf782f74f0706ea8f02445cb4e77c41f0f77ac5b3591c202294cb3",
+      "ttl": 55
+    },
+    "158700861": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_backup",
+        "name": "Region BackUp",
+        "version": "1.1.0",
+        "link": "https://github.com/GHS-Official/Region-BackUp",
+        "authors": [
+          "GHS-Official",
+          "Bexerlmao",
+          "mc_doge_"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [
+          "mcdreforged>=2.6.0"
+        ],
+        "description": {
+          "en_us": "An MCDR plugin that backs up or backs up files on a regional basis",
+          "zh_cn": "一个以区域为单位备份或回档的MCDR插件"
+        }
+      },
+      "size": 20609,
+      "hash_md5": "28eda7b26a08ee4c636c70ea23e8bec9",
+      "hash_sha256": "0d409c4076a9ca75cf6853ba42b6fa0cdbefec06cd42ecb3698d3a564428823b",
+      "ttl": 55
+    },
+    "158700989": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_backup",
+        "name": "Region BackUp",
+        "version": "1.0.0",
+        "link": "https://github.com/GHS-Official/Region-BackUp",
+        "authors": [
+          "GHS-Official",
+          "Bexerlmao",
+          "mc_doge_"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [
+          "mcdreforged>=2.6.0"
+        ],
+        "description": {
+          "en_us": "An MCDR plugin that backs up or backs up files on a regional basis",
+          "zh_cn": "一个以区域为单位备份或回档的MCDR插件"
+        }
+      },
+      "size": 20494,
+      "hash_md5": "da1bd4823125424c2c5bf98b4c373ed7",
+      "hash_sha256": "67ea345da6825ecc6fc890ef0d0c837dda9980140ecf6cb73e1e1f3b2305f1f7",
+      "ttl": 55
+    }
+  },
+  "repos_info": null
+}

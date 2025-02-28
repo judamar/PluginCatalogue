@@ -1,0 +1,30 @@
+{
+  "NOTICE": "Not public API, DO NOT use this file",
+  "release_pages": {},
+  "asset_data": {
+    "140272680": {
+      "meta": {
+        "schema_version": 4,
+        "id": "restartserver",
+        "name": "RestartServer",
+        "version": "1.0.0",
+        "link": "https://github.com/Crystal0404/RestartServer",
+        "authors": [
+          "Crystal0404"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.6.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "Restart Server"
+        }
+      },
+      "size": 11554,
+      "hash_md5": "4becc11c05f3115275d2e64640aa809e",
+      "hash_sha256": "e1af380b43c504349957a7bc1d9c04add3811d7087a20f17dffbba4365c31b02",
+      "ttl": 55
+    }
+  },
+  "repos_info": null
+}

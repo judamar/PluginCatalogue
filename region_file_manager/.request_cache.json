@@ -1,0 +1,28 @@
+{
+  "NOTICE": "Not public API, DO NOT use this file",
+  "release_pages": {},
+  "asset_data": {
+    "175052850": {
+      "meta": {
+        "schema_version": 4,
+        "id": "region_file_manager",
+        "name": "RegionFileManager",
+        "version": "1.1.0",
+        "link": "https://github.com/judamar/RegionFileManager",
+        "authors": [
+          "judamar"
+        ],
+        "dependencies": {},
+        "requirements": [],
+        "description": {
+          "en_us": "Plugin to magement of region files in the world."
+        }
+      },
+      "size": 4300,
+      "hash_md5": "30b84a2c05f3dbf02c9c09640694980a",
+      "hash_sha256": "18a9cf0df93ca36e2756740452f267f38d4d2d904fb2f0a402a6313762ac2828",
+      "ttl": 55
+    }
+  },
+  "repos_info": null
+}

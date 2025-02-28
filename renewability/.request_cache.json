@@ -1,0 +1,31 @@
+{
+  "NOTICE": "Not public API, DO NOT use this file",
+  "release_pages": {},
+  "asset_data": {
+    "44272100": {
+      "meta": {
+        "schema_version": 4,
+        "id": "renewability",
+        "name": "Renewability",
+        "version": "1.1.0",
+        "link": "https://github.com/Fidelxyz/MCDR-Renewability",
+        "authors": [
+          "Fidel Yin"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.0.0-alpha.1",
+          "minecraft_data_api": "*"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "A plugin that allows players to clone non-renewable items"
+        }
+      },
+      "size": 6184,
+      "hash_md5": "fb0fa6439c36f6a68fc4350eef1c61d2",
+      "hash_sha256": "f380c35a8eb520bf32cf3448c46d924f7b06de254541497ad3823417f36ce814",
+      "ttl": 55
+    }
+  },
+  "repos_info": null
+}

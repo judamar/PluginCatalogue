@@ -1,0 +1,26 @@
+{
+  "NOTICE": "Not public API, DO NOT use this file",
+  "release_pages": {},
+  "asset_data": {
+    "178061951": {
+      "meta": {
+        "schema_version": 4,
+        "id": "vault_bot",
+        "name": "Vault Bot",
+        "version": "1.0.0",
+        "link": "https://github.com/meng877/Vault_Bot",
+        "authors": [],
+        "dependencies": {},
+        "requirements": [],
+        "description": {
+          "en_us": "基于MCDR和carpet bot的自动刷宝库方法"
+        }
+      },
+      "size": 2021,
+      "hash_md5": "178c8615f4398dc6c17db07fe666bed4",
+      "hash_sha256": "c237e6a0c0165875065772edda9bf4e0848909961dc8776e138c42b1ce3c2beb",
+      "ttl": 55
+    }
+  },
+  "repos_info": null
+}

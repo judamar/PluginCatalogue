@@ -1,0 +1,222 @@
+{
+  "NOTICE": "Not public API, DO NOT use this file",
+  "release_pages": {},
+  "asset_data": {
+    "65204921": {
+      "meta": {
+        "schema_version": 4,
+        "id": "smart_backup",
+        "name": "SmartBackup",
+        "version": "1.4.2",
+        "link": "https://github.com/kmcsr/smart_backup_mcdr",
+        "authors": [
+          "zyxkad"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.0.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "A Minecraft Backup Plugin",
+          "zh_cn": "一个多功能Minecraft存档备份插件"
+        }
+      },
+      "size": 27043,
+      "hash_md5": "88cee98663bdaa4f3acedce38f715eb7",
+      "hash_sha256": "5f06d2f87ff212207bfc30bb9ba3d0ed631f843a57c4638908a10ab7f9c92ca7",
+      "ttl": 55
+    },
+    "64895563": {
+      "meta": {
+        "schema_version": 4,
+        "id": "smart_backup",
+        "name": "SmartBackup",
+        "version": "1.4.1",
+        "link": "https://github.com/kmcsr/smart_backup_mcdr",
+        "authors": [
+          "zyxkad"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.0.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "A Minecraft Backup Plugin",
+          "zh_cn": "一个多功能Minecraft存档备份插件"
+        }
+      },
+      "size": 13240,
+      "hash_md5": "bf6fc08cc48e2c51036c4bf8fcae99e1",
+      "hash_sha256": "4293332dc97113a8588270f882cbde6e929ec4a75ace69c6e557437cb09bc95a",
+      "ttl": 55
+    },
+    "64796263": {
+      "meta": {
+        "schema_version": 4,
+        "id": "smart_backup",
+        "name": "SmartBackup",
+        "version": "1.4.0",
+        "link": "https://github.com/kmcsr/smart_backup_mcdr",
+        "authors": [
+          "zyxkad"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.0.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "A Minecraft Backup Plugin",
+          "zh_cn": "一个多功能Minecraft存档备份插件"
+        }
+      },
+      "size": 13238,
+      "hash_md5": "c0ac5cdc7189296c699853d84eeb7a41",
+      "hash_sha256": "21394e43bb8af90046b436bc0ac66c254fdbb022f4395fb9649d1c88d0e62e1c",
+      "ttl": 55
+    },
+    "63366275": {
+      "meta": {
+        "schema_version": 4,
+        "id": "smart_backup",
+        "name": "SmartBackup",
+        "version": "1.3.0",
+        "link": "https://github.com/kmcsr/smart_backup_mcdr",
+        "authors": [
+          "zyxkad"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.0.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "A Minecraft Backup Plugin",
+          "zh_cn": "一个依赖MCDR的备份插件"
+        }
+      },
+      "size": 12855,
+      "hash_md5": "dcf47e9dbc11929f5229024e9d767f37",
+      "hash_sha256": "b0361017cdaef4ff7c98dfb02c763ccc3cab44a38fbebcdede8b403a62ba5ed4",
+      "ttl": 55
+    },
+    "54147589": {
+      "meta": {
+        "schema_version": 4,
+        "id": "smart_backup",
+        "name": "SmartBackup",
+        "version": "1.2.1",
+        "link": "https://github.com/kmcsr/smart_backup_mcdr",
+        "authors": [
+          "zyxkad"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.0.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "A Minecraft Backup Plugin",
+          "zh_cn": "一个依赖MCDR的备份插件"
+        }
+      },
+      "size": 11228,
+      "hash_md5": "e7d08feeff0c7400f2e3a27b3a6ad230",
+      "hash_sha256": "30bab03b018cb493d97fcebd659b9881a65c872b49bddfa1555e70da2374e91f",
+      "ttl": 55
+    },
+    "53548990": {
+      "meta": {
+        "schema_version": 4,
+        "id": "smart_backup",
+        "name": "SmartBackup",
+        "version": "1.2.0",
+        "link": "https://github.com/kmcsr/smart_backup_mcdr",
+        "authors": [
+          "zyxkad"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.0.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "A Minecraft Backup Plugin",
+          "zh_cn": "一个依赖MCDR的备份插件"
+        }
+      },
+      "size": 10437,
+      "hash_md5": "341b28f5e31adf0164aaeb70abbea121",
+      "hash_sha256": "d362ae3998c1e0dc3a6825c09020c322d19a8cb2763eeb68a6c8b266e7a07dab",
+      "ttl": 55
+    },
+    "53426176": {
+      "meta": {
+        "schema_version": 4,
+        "id": "smart_backup",
+        "name": "SmartBackup",
+        "version": "1.1.1",
+        "link": "https://github.com/kmcsr/smart_backup_mcdr",
+        "authors": [
+          "zyxkad"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.0.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "A Minecraft Backup Plugin",
+          "zh_cn": "一个依赖MCDR的备份插件"
+        }
+      },
+      "size": 10374,
+      "hash_md5": "f8f4b976c7c0aa75431ec3367135e9e3",
+      "hash_sha256": "077f75eaf0ac99775cb5b4271a4b288f03cc964c059a9ae7e91d122e062c8a5e",
+      "ttl": 55
+    },
+    "53390606": {
+      "meta": {
+        "schema_version": 4,
+        "id": "smart_backup",
+        "name": "SmartBackup",
+        "version": "1.1.0",
+        "link": "https://github.com/kmcsr/smart_backup_mcdr",
+        "authors": [
+          "zyxkad"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.0.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "A Minecraft Backup Plugin",
+          "zh_cn": "一个依赖MCDR的备份插件"
+        }
+      },
+      "size": 10210,
+      "hash_md5": "b4391844b0ad176a506f23f755f45708",
+      "hash_sha256": "fc574f0a3a26b3a86af96c2727516fcd2d0718f2e9f9ca266ade16b71bfcb846",
+      "ttl": 55
+    },
+    "53367700": {
+      "meta": {
+        "schema_version": 4,
+        "id": "smart_backup",
+        "name": "SmartBackup",
+        "version": "1.0.0",
+        "link": "https://github.com/kmcsr/smart_backup_mcdr",
+        "authors": [
+          "zyxkad"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.0.0"
+        },
+        "requirements": [],
+        "description": {
+          "en_us": "A Minecraft Backup Plugin"
+        }
+      },
+      "size": 8841,
+      "hash_md5": "9705ed67e6e8f97933203a53e2125502",
+      "hash_sha256": "9ee1c70947415df9f1d0000aa22cfcb32723d7e7d77b05c17632baad162ff7d8",
+      "ttl": 55
+    }
+  },
+  "repos_info": null
+}

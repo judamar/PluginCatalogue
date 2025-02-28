@@ -1,0 +1,34 @@
+{
+  "NOTICE": "Not public API, DO NOT use this file",
+  "release_pages": {},
+  "asset_data": {
+    "47804230": {
+      "meta": {
+        "schema_version": 4,
+        "id": "simple_test",
+        "name": "simple_test",
+        "version": "3.0.0",
+        "link": "https://github.com/R1ckyH/simple_test",
+        "authors": [
+          "Ricky"
+        ],
+        "dependencies": {
+          "mcdreforged": ">=2.0.0"
+        },
+        "requirements": [
+          "javaproperties",
+          "mcdreforged"
+        ],
+        "description": {
+          "en_us": "testing basic server problem.",
+          "zh_cn": "服务器基础自检插件。"
+        }
+      },
+      "size": 6608,
+      "hash_md5": "793ad8016e0f2bf4be34b70b69629a71",
+      "hash_sha256": "23f8bd1c27aa0eb56f0671f2e5bee390aca75e4518b25fbfbd891044fb09a165",
+      "ttl": 55
+    }
+  },
+  "repos_info": null
+}
