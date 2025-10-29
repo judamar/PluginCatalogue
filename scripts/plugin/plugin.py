@@ -1,7 +1,8 @@
 import enum
+import functools
 from json import JSONDecodeError
 from pathlib import Path
-from typing import Optional, List, Dict, Union
+from typing import Optional, List, Dict, Union, Callable, Any, Type, TypeVar
 
 from typing_extensions import Literal
 
@@ -13,11 +14,14 @@ from meta.plugin import PluginInfo, MetaInfo
 from meta.plugin_all import AllOfAPlugin
 from meta.release import ReleaseSummary
 from meta.repos import RepositoryInfo
+from meta.request_meta import RequestMeta, REQUEST_META_DEFAULT_TTL
 from plugin.cache import PluginRequestCacheManager
 from plugin.label import Label, get_label_set
 from utils import file_utils, markdown_utils
 from utils.repos import PLUGIN_CATALOGUE, GithubRepository
 from utils.serializer import Serializable
+
+_S = TypeVar('_S', bound=Serializable)
 
 
 class _PluginDataSet(enum.Flag):
@@ -118,9 +122,18 @@ class Plugin:
 		self.__cache_manager = PluginRequestCacheManager(self, self.__request_cache_file)
 		self.__cache_manager.load()
 
+		self.__old_request_meta: Optional[RequestMeta] = None
+		self.__new_request_meta: Optional[RequestMeta] = None
+
+		self.__introduction_error: Dict[str, Exception] = {}
 		self.__meta_info_error: Optional[Exception] = None
 		self.__release_summary_error: Optional[Exception] = None
 		self.__repository_info_error: Optional[Exception] = None
+
+		self.__old_introduction: Dict[str, str] = {}
+		self.__old_meta_info: Optional[MetaInfo] = None
+		self.__old_release_summary: Optional[ReleaseSummary] = None
+		self.__old_repository_info: Optional[RepositoryInfo] = None
 
 	# ========================= property && getter =========================
 
@@ -203,6 +216,87 @@ class Plugin:
 				raise Exception('status code {} (should be 200) when fetching text {} from {}'.format(resp.status_code, file_path, resp.url))
 		return resp.text
 
+	def __read_old_file(self, path: Path, clazz: Type[_S], what: str) -> Optional[_S]:
+		try:
+			data = file_utils.load_json(path)
+			return clazz.deserialize(data)
+		except Exception as e:
+			if not isinstance(e, FileNotFoundError):
+				log.error('({}) read old {} failed: {}'.format(self.id, what, e))
+			return None
+
+	# ========================= File Index =========================
+
+	@property
+	def __request_meta_file(self) -> Path:
+		return constants.META_FOLDER / self.id / '.request_meta.json'
+
+	def load_old_request_meta(self):
+		self.__old_request_meta = self.__read_old_file(self.__request_meta_file, RequestMeta, 'request meta')
+
+	def reuse_old_fetch_results(self):
+		def create_item(obj: Any, old_obj: Any, err: Optional[Exception], prev_getter: Callable[[], Optional[RequestMeta.Item]]) -> RequestMeta.Item:
+			if obj is not None:
+				return RequestMeta.Item(ttl=REQUEST_META_DEFAULT_TTL, last_failure=None)
+
+			current_failure = '({}) {}'.format(type(err), err) if err is not None else None
+			if old_obj is None:
+				return RequestMeta.Item(ttl=0, last_failure=current_failure)
+
+			# obj is None, old_obj is not None. Reuse old
+			if self.__old_request_meta is None or (prev_item := prev_getter()) is None:
+				# prev_item unavailable
+				return RequestMeta.Item(ttl=REQUEST_META_DEFAULT_TTL - 1, last_failure=current_failure)
+			else:
+				rmi = RequestMeta.Item(ttl=max(0, prev_item.ttl - 1), last_failure=current_failure)
+				if rmi.ttl > 0:  # obj is None, ttl > 0, will reuse
+					rmi.created_at = prev_item.created_at
+					rmi.created_by_github_action_id = prev_item.created_by_github_action_id
+				return rmi
+
+		introduction_items: Dict[str, RequestMeta.Item] = {}
+		external_introduction_langs = [lang for lang in LANGUAGES if lang in self.__plugin_info.external_introduction]
+		for lang in external_introduction_langs:
+			intro_err = self.__introduction_error.get(lang)
+			if (curr_text := self.__introduction.get_mapping().get(lang)) == self.__create_external_introduction_error_text(lang) or intro_err:
+				curr_text = None
+			if (prev_text := self.__old_introduction.get(lang)) == self.__create_external_introduction_error_text(lang):
+				prev_text = None
+			introduction_items[lang] = create_item(curr_text, prev_text, intro_err, lambda: self.__old_request_meta.introduction.get(lang))
+
+		request_meta = RequestMeta(
+			introduction=introduction_items,
+			meta=create_item(self.meta_info, self.__old_meta_info, self.__meta_info_error, lambda: self.__old_request_meta.meta),
+			release=create_item(self.release_summary, self.__old_release_summary, self.__release_summary_error, lambda: self.__old_request_meta.release),
+			repository=create_item(self.repository_info, self.__old_repository_info, self.__repository_info_error, lambda: self.__old_request_meta.repository),
+		)
+
+		if self.__introduction is not None:  # should not be None after the `self.fetch_introduction()` call
+			for lang in external_introduction_langs:
+				if self.__introduction_error.get(lang) is not None and (imeta := request_meta.introduction[lang]).ttl > 0:
+					if (old_intro := self.__old_introduction.get(lang)) is not None:
+						log.info('({}) Reusing old external introduction for language {}, {!r}'.format(self.id, lang, imeta))
+						self.__introduction.set(lang, old_intro)
+		else:
+			log.warning('({}) reuse_old_fetch_results() called before self.__introduction is set'.format(self.id))
+
+		if self.meta_info is None and request_meta.meta.ttl > 0:
+			log.info('({}) Reusing old meta_info, {!r}'.format(self.id, request_meta.meta))
+			self.meta_info = self.__old_meta_info
+		if self.release_summary is None and request_meta.release.ttl > 0:
+			log.info('({}) Reusing old release_summary, {!r}'.format(self.id, request_meta.release))
+			self.release_summary = self.__old_release_summary
+		if self.repository_info is None and request_meta.repository.ttl > 0:
+			log.info('({}) Reusing old repository_info, {!r}'.format(self.id, request_meta.repository))
+			self.repository_info = self.__old_repository_info
+
+		self.__new_request_meta = request_meta
+
+	def save_request_meta(self):
+		if self.__new_request_meta is None:
+			raise RuntimeError('self.__new_request_meta is not initialized, please call `reuse_old_fetch_results` first')
+		file_utils.save_json(self.__new_request_meta.serialize(), self.__request_meta_file)
+
 	# ========================= Request Cache =========================
 
 	@property
@@ -213,6 +307,12 @@ class Plugin:
 		file_utils.save_json(self.__cache_manager.dump_for_save(), self.__request_cache_file)
 
 	# ========================= Introduction =========================
+
+	@classmethod
+	@functools.lru_cache(None)
+	def __create_external_introduction_error_text(cls, lang: str) -> str:
+		with with_language(lang):
+			return '*{}*'.format(Text('data_fetched_failed'))
 
 	async def fetch_introduction(self):
 		external_introduction = self.__plugin_info.external_introduction
@@ -226,7 +326,8 @@ class Plugin:
 					except Exception as e:
 						log.exception('Failed to get custom introduction file in language {} from {} in {}'.format(lang, file_location, self))
 						reporter.record_plugin_failure(self.id, 'Fetch custom introduction file in language {} from {} failed'.format(lang, file_location), e)
-						introduction_translations[lang] = '*{}*'.format(Text('data_fetched_failed'))
+						introduction_translations[lang] = self.__create_external_introduction_error_text(lang)
+						self.__introduction_error[lang] = e
 					else:
 						if file_location.lower().endswith('.md'):
 							file_content = markdown_utils.rewrite_markdown(
@@ -248,6 +349,11 @@ class Plugin:
 		self.__dataset |= _PluginDataSet.introduction
 		log.info('({}) Introduction fetched'.format(self.id))
 
+	def load_old_introduction(self):
+		old_fpi = self.__read_old_file(self.__formatted_plugin_info_file, PluginInfo, 'PluginInfo')
+		if old_fpi is not None:
+			self.__old_introduction = old_fpi.introduction
+
 	# ========================= PluginInfo =========================
 
 	def generate_formatted_plugin_info(self) -> PluginInfo:
@@ -264,9 +370,13 @@ class Plugin:
 			introduction_urls=self.get_introduction_urls(kind='raw'),
 		)
 
+	@property
+	def __formatted_plugin_info_file(self) -> Path:
+		return constants.META_FOLDER / self.id / 'plugin.json'
+
 	def save_formatted_plugin_info(self):
 		info = self.generate_formatted_plugin_info()
-		file_utils.save_json(info.serialize(), constants.META_FOLDER / self.id / 'plugin.json')
+		file_utils.save_json(info.serialize(), self.__formatted_plugin_info_file)
 
 	# ========================= MetaInfo =========================
 
@@ -281,9 +391,16 @@ class Plugin:
 		self.__dataset |= _PluginDataSet.meta
 		log.info('({}) MetaInfo fetched'.format(self.id))
 
+	@property
+	def __meta_info_file(self) -> Path:
+		return constants.META_FOLDER / self.id / 'meta.json'
+
+	def load_old_meta_info(self):
+		self.__old_meta_info = self.__read_old_file(self.__meta_info_file, MetaInfo, 'MetaInfo')
+
 	def save_meta_info_if_available(self):
 		if self.meta_info is not None:
-			file_utils.save_json(self.meta_info.serialize(), constants.META_FOLDER / self.id / 'meta.json')
+			file_utils.save_json(self.meta_info.serialize(), self.__meta_info_file)
 		else:
 			log.warning('({}) Skipping saving meta_info due to error {}'.format(self.id, self.__meta_info_error))
 
@@ -301,8 +418,11 @@ class Plugin:
 		log.info('({}) Release fetched'.format(self.id))
 
 	@property
-	def __release_info_file(self) -> str:
+	def __release_info_file(self) -> Path:
 		return constants.META_FOLDER / self.id / 'release.json'
+
+	def load_old_release_summary(self):
+		self.__old_release_summary = self.__read_old_file(self.__release_info_file, ReleaseSummary, 'ReleaseSummary')
 
 	def save_release_summary_if_available(self):
 		if self.release_summary is not None:
@@ -325,9 +445,16 @@ class Plugin:
 		self.__dataset |= _PluginDataSet.repository
 		log.info('({}) Repository information fetched'.format(self.id))
 
+	@property
+	def __repository_info_file(self) -> Path:
+		return constants.META_FOLDER / self.id / 'repository.json'
+
+	def load_old_repository_info(self):
+		self.__old_repository_info = self.__read_old_file(self.__repository_info_file, RepositoryInfo, 'RepositoryInfo')
+
 	def save_repository_info_if_available(self):
 		if self.repository_info is not None:
-			file_utils.save_json(self.repository_info.serialize(), constants.META_FOLDER / self.id / 'repository.json')
+			file_utils.save_json(self.repository_info.serialize(), self.__repository_info_file)
 		else:
 			log.warning('({}) Skipping saving repository_info due to error {}'.format(self.id, self.__repository_info_error))
 
