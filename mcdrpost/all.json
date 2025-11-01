@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "schema_version": 4,
+    "id": "mcdrpost",
+    "name": "MCDRpost",
+    "version": "3.3.3",
+    "link": "https://github.com/xieyuen/MCDR-Plugins/tree/master/src/MCDRpost",
+    "authors": [
+      "Flyky",
+      "xieyuen"
+    ],
+    "dependencies": {
+      "python": ">=3.10",
+      "mcdreforged": ">=2.15.0",
+      "minecraft_data_api": "*"
+    },
+    "requirements": [
+      "mcdreforged>=2.15.0"
+    ],
+    "description": {
+      "en_us": "A MCDR plugin for post/teleport items",
+      "zh_cn": "一个用于邮寄/传送物品的MCDR插件"
+    }
+  },
+  "plugin": {
+    "schema_version": 1,
+    "id": "mcdrpost",
+    "authors": [
+      "Flyky",
+      "xieyuen"
+    ],
+    "repository": "https://github.com/xieyuen/MCDR-Plugins",
+    "branch": "master",
+    "related_path": "src/MCDRpost",
+    "labels": [
+      "tool"
+    ],
+    "introduction": {
+      "en_us": "A MCDR plugin for post/teleport items\n",
+      "zh_cn": "一个用于邮寄/传送物品的MCDR插件\n"
+    },
+    "introduction_urls": {
+      "en_us": "https://raw.githubusercontent.com/MCDReforged/PluginCatalogue/master/plugins/mcdrpost/introduction.md",
+      "zh_cn": "https://raw.githubusercontent.com/MCDReforged/PluginCatalogue/master/plugins/mcdrpost/introduction-zh_cn.md"
+    }
+  },
+  "release": null,
+  "repository": null
+}

@@ -1,0 +1,35 @@
+{
+  "NOTICE": "Not public API, DO NOT use this file",
+  "introduction": {
+    "en_us": {
+      "created_at": "2025-11-01T23:52:10Z",
+      "created_by_github_action_id": 19004429655,
+      "ttl": 20,
+      "last_failure": null
+    },
+    "zh_cn": {
+      "created_at": "2025-11-01T23:52:10Z",
+      "created_by_github_action_id": 19004429655,
+      "ttl": 20,
+      "last_failure": null
+    }
+  },
+  "meta": {
+    "created_at": "2025-11-01T23:52:10Z",
+    "created_by_github_action_id": 19004429655,
+    "ttl": 20,
+    "last_failure": null
+  },
+  "release": {
+    "created_at": "2025-11-01T23:52:10Z",
+    "created_by_github_action_id": 19004429655,
+    "ttl": 0,
+    "last_failure": "(<class 'Exception'>) Un-expected status code 429: b'{\\n  \"documentation_url\": \"https://developer.github.com/v3/#abuse-rate-limits\",\\n  \"message\": \"You have triggered an abuse detection mechanism. Please wait a few minutes before you try again.\"\\n}\\n'"
+  },
+  "repository": {
+    "created_at": "2025-11-01T23:52:10Z",
+    "created_by_github_action_id": 19004429655,
+    "ttl": 20,
+    "last_failure": null
+  }
+}
