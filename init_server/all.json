@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "schema_version": 4,
+    "id": "init_server",
+    "name": "InitServer",
+    "version": "0.1.0",
+    "link": "https://github.com/Mooling0602/InitServer-MCDR",
+    "authors": [
+      "Mooling0602"
+    ],
+    "dependencies": {
+      "mcdreforged": ">=2.1.0"
+    },
+    "requirements": [
+      "javaproperties"
+    ],
+    "description": {
+      "en_us": "Init your Minecraft server with MCDReforged quickly.",
+      "zh_cn": "在MCDR下快速初始化你的MC服务器。"
+    }
+  },
+  "plugin": {
+    "schema_version": 1,
+    "id": "init_server",
+    "authors": [
+      "Mooling0602"
+    ],
+    "repository": "https://github.com/Mooling0602/InitServer-MCDR",
+    "branch": "main",
+    "related_path": ".",
+    "labels": [
+      "management"
+    ],
+    "introduction": {
+      "en_us": "Init your Minecraft server with MCDReforged quickly.\n",
+      "zh_cn": "在MCDR下快速初始化你的MC服务器。\n"
+    },
+    "introduction_urls": {
+      "en_us": "https://raw.githubusercontent.com/Mooling0602/InitServer-MCDR/main/doc/description_en_us.md",
+      "zh_cn": "https://raw.githubusercontent.com/Mooling0602/InitServer-MCDR/main/doc/description_zh_cn.md"
+    }
+  },
+  "release": null,
+  "repository": null
+}

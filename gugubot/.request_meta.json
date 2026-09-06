@@ -1,0 +1,29 @@
+{
+  "NOTICE": "Not public API, DO NOT use this file",
+  "introduction": {
+    "zh_cn": {
+      "created_at": "2026-09-06T00:13:26Z",
+      "created_by_github_action_id": 34000709769,
+      "ttl": 20,
+      "last_failure": null
+    }
+  },
+  "meta": {
+    "created_at": "2026-09-06T00:13:26Z",
+    "created_by_github_action_id": 34000709769,
+    "ttl": 20,
+    "last_failure": null
+  },
+  "release": {
+    "created_at": "2026-09-06T00:13:26Z",
+    "created_by_github_action_id": 34000709769,
+    "ttl": 0,
+    "last_failure": "(<class 'Exception'>) Un-expected status code 429: b'{\\n  \"documentation_url\": \"https://developer.github.com/v3/#abuse-rate-limits\",\\n  \"message\": \"You have triggered an abuse detection mechanism. Please wait a few minutes before you try again.\"\\n}\\n'"
+  },
+  "repository": {
+    "created_at": "2026-09-06T00:13:26Z",
+    "created_by_github_action_id": 34000709769,
+    "ttl": 0,
+    "last_failure": "(<class 'Exception'>) Un-expected status code 403: b'{\"message\":\"API rate limit exceeded for 20.109.38.48. (But here\\'s the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\\n'"
+  }
+}
