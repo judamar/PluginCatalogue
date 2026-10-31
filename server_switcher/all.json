@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "schema_version": 4,
+    "id": "server_switcher",
+    "name": "Server Switcher",
+    "version": "1.0.0",
+    "link": "https://github.com/meng877/server_switcher",
+    "authors": [
+      "meng_877"
+    ],
+    "dependencies": {
+      "mcdreforged": ">=2.1.2"
+    },
+    "requirements": [
+      "mcdreforged>=2.0.1"
+    ],
+    "description": {
+      "en_us": "Switch between server softwares in single MCDR instance.",
+      "zh_cn": "在单个 MCDR 实例中切换服务器。"
+    }
+  },
+  "plugin": {
+    "schema_version": 1,
+    "id": "server_switcher",
+    "authors": [
+      "meng_877"
+    ],
+    "repository": "https://github.com/meng877/server_switcher",
+    "branch": "main",
+    "related_path": ".",
+    "labels": [
+      "management"
+    ],
+    "introduction": {
+      "zh_cn": "在单个 MCDR 实例中的服务器软件之间切换。\n"
+    },
+    "introduction_urls": {
+      "en_us": "https://raw.githubusercontent.com/MCDReforged/PluginCatalogue/master/plugins/server_switcher/introduction.md",
+      "zh_cn": "https://raw.githubusercontent.com/MCDReforged/PluginCatalogue/master/plugins/server_switcher/introduction-zh_cn.md"
+    }
+  },
+  "release": null,
+  "repository": null
+}
